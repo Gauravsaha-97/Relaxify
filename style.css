@@ -1,0 +1,482 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-color: #0984e3;
+}
+
+.logo {
+    position: absolute;
+    width: 130px;
+    height: 33px;
+    left: 25px;
+    top: 36px;
+    font-family: "Satisfy", cursive;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 30px;
+    color: #dfe6e9;
+}
+
+.logo_name {
+    position: absolute;
+    width: 130px;
+    height: 33px;
+    left: 25px;
+    top: 36px;
+    font-family: "Satisfy", cursive;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 30px;
+    color: #dfe6e9;
+}
+
+.logo-img {
+    position: absolute;
+    width: 69px;
+    height: 78px;
+    left: 34px;
+    top: 13px;
+    z-index: -1;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    margin-top: 80px;
+    align-items: center;
+}
+
+.input label {
+    text-align: center;
+    font-size: 23px;
+    margin-bottom: 18px;
+    font-family: "Mochiy Pop P One", sans-serif;
+    color: #f5f6fa;
+}
+
+.input select {
+    border: none;
+    border-radius: 8px;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    font-family: "Red Hat Mono", monospace;
+    padding: 8px 4px;
+    background-color: #273c75;
+    color: #fff;
+}
+
+.input select:focus {
+    outline: none;
+}
+
+.circle-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.circle-outline {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 10px solid #f1f1f1;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.circle-progress {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: #192a56;
+    border-radius: 50%;
+    transition: 4s ease all;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.circle-grow {
+    transform: scale(3.56);
+}
+
+.breadth {
+    text-align: center;
+    margin-bottom: 18px;
+    font-size: 18px;
+    font-family: "Mochiy Pop P One", sans-serif;
+    color: #192a56;
+}
+
+.breadth-input {
+    margin-top: 50px;
+}
+
+.wrapper {
+    margin: 0 auto;
+}
+
+.breadth-text {
+    text-align: center;
+    margin-bottom: 18px;
+    font-size: 40px;
+    font-family: "Mochiy Pop P One", sans-serif;
+    float: left;
+}
+
+.breadth-time {
+    text-align: center;
+    margin-bottom: 18px;
+    margin-top: 25px;
+    font-size: 18px;
+    font-family: "Mochiy Pop P One", sans-serif;
+    float: right;
+    color: #192a56;
+}
+
+.instructions {
+    text-align: center;
+    margin-bottom: 32px;
+    font-size: 18px;
+    font-family: "Mochiy Pop P One", sans-serif;
+}
+
+button {
+    padding: 8px 20px;
+    border-radius: 8px;
+    background-color: #192a56;
+    color: #fff;
+    width: 130px;
+    height: 55px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease all;
+    font-family: "Mochiy Pop P One", sans-serif;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+button:hover {
+    background-color: #f1f1f1;
+    color: #00a8ff;
+}
+
+.button-inactive {
+    pointer-events: none;
+    background-color: #969696;
+    color: #353b48;
+}
+
+.social {
+    margin-top: 20px;
+    margin-left: 1000px;
+}
+
+.fa {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    margin-right: 10px;
+    background: #3b5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55acee;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa-pinterest {
+    background: #cb2027;
+    color: white;
+}
+
+.fa-snapchat-ghost {
+    background: #fffc00;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.container {
+    margin-left: 10px;
+    padding: 4rem;
+    width: 48rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+    color: #373d51;
+    padding: 1.3rem;
+    margin: 0;
+}
+
+h2 {
+    font-family: "Red Hat Mono", monospace;
+    margin-top: 50px;
+}
+
+.accordion a {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem 3rem 1rem 1rem;
+    margin-top: 20px;
+    color: #192a56;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border-bottom: 1px solid #e5e5e5;
+    font-family: "Mochiy Pop P One", sans-serif;
+}
+
+.accordion a:hover,
+.accordion a:hover::after {
+    cursor: pointer;
+    color: #b8e994;
+}
+
+.accordion a:hover::after {
+    border: 1px solid #b8e994;
+}
+
+.accordion a.active {
+    color: #b8e994;
+    border-bottom: 1px solid #b8e994;
+}
+
+.accordion a::after {
+    font-family: "Ionicons";
+    position: absolute;
+    float: right;
+    right: 1rem;
+    font-size: 1rem;
+    color: #7288a2;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 1px solid #7288a2;
+    text-align: center;
+}
+
+.accordion a.active::after {
+    font-family: "Ionicons";
+    color: #b8e994;
+    border: 1px solid #b8e994;
+}
+
+.accordion .content {
+    opacity: 0;
+    padding: 0 1rem;
+    max-height: 0;
+    border-bottom: 1px solid #e5e5e5;
+    overflow: hidden;
+    clear: both;
+    -webkit-transition: all 0.2s ease 0.15s;
+    -o-transition: all 0.2s ease 0.15s;
+    transition: all 0.2s ease 0.15s;
+}
+
+.accordion .content p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-family: "Red Hat Mono", monospace;
+    text-align: justify;
+}
+
+.accordion .content.active {
+    opacity: 1;
+    padding: 1rem;
+    max-height: 100%;
+    -webkit-transition: all 0.35s ease 0.15s;
+    -o-transition: all 0.35s ease 0.15s;
+    transition: all 0.35s ease 0.15s;
+}
+
+.nav-links {
+    margin-left: 600px;
+    margin-top: 20px;
+}
+
+.fas {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 25px;
+    font-family: "Mochiy Pop P One", sans-serif;
+    color: #192a56;
+}
+
+.fas:hover {
+    border-radius: 20%;
+    background: #192a56;
+    color: #f5f6fa;
+}
+
+footer {
+    background: #140b5c;
+    width: 100%;
+    height: 400px;
+    bottom: 0;
+    left: 0;
+}
+
+footer::before {
+    content: "";
+    left: 0;
+    top: 100px;
+    height: 1px;
+    width: 100%;
+    background: #1b9cfc;
+}
+
+footer .content {
+    max-width: 1250px;
+    margin: auto;
+}
+
+footer .content .top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.content .top .logo-details {
+    color: #1b9cfc;
+    font-size: 30px;
+}
+
+footer .content .link-boxes {
+    width: 100%;
+    display: flex;
+}
+
+footer .content .link-boxes .box {
+    width: calc(100% / 5 - 10px);
+}
+
+.content .link-boxes .box li {
+    margin: 6px 0;
+    list-style: none;
+}
+
+.link-boxes .input-box input {
+    height: 40px;
+    width: calc(100% + 55px);
+    outline: none;
+    border: 2px solid #1b9cfc;
+    background: #140b5c;
+    border-radius: 4px;
+    padding: 0 15px;
+    font-size: 15px;
+    color: #1b9cfc;
+    margin-top: 5px;
+}
+
+.link-boxes .input-box input[type="button"] {
+    background: #1b9cfc;
+    color: #140b5c;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 4px 0;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.input-box input[type="button"]:hover {
+    opacity: 1;
+}
+
+footer .bottom-details {
+    width: 100%;
+    background: #0f0844;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: "Red Hat Mono", monospace;
+    text-align: justify;
+    color: #f8efba;
+}
+
+.footer-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: "Red Hat Mono", monospace;
+    text-align: justify;
+    color: #1b9cfc;
+}
+
+.box {
+    margin-right: 180px;
+}
+
+@media (max-width: 800px) {
+    footer {
+        position: relative;
+    }
+    @media (max-width: 520px) {
+        footer::before {
+            top: 145px;
+        }
+        footer .content .top {
+            flex-direction: row;
+        }
+    }
+}

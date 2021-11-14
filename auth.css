@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0984e3;
+}
+
+.auth-header {
+    margin-top: 100px;
+    font-family: "Mochiy Pop P One", sans-serif;
+    text-align: center;
+    font-size: 23px;
+    margin-bottom: 50px;
+    color: #f5f6fa;
+}
+
+.logo {
+    position: absolute;
+    width: 130px;
+    height: 33px;
+    left: 25px;
+    top: 36px;
+    font-family: "Satisfy", cursive;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 30px;
+    color: #dfe6e9;
+}
+
+.logo-img {
+    position: absolute;
+    width: 69px;
+    height: 78px;
+    left: 50px;
+    top: 50px;
+    z-index: -1;
+}
