@@ -2,12 +2,12 @@
 <html lang="en" dir="ltr">
 
 <head>
-    <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Open+Sans:ital@0;1&family=Red+Hat+Mono:wght@500&family=Satisfy&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="contact.css">
+    <meta charset="UTF-8" />
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Open+Sans:ital@0;1&family=Red+Hat+Mono:wght@500&family=Satisfy&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="contact.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Book a session with us</title>
 </head>
 
@@ -15,22 +15,28 @@
     <div class="container">
         <div class="content">
             <div class="right-side">
-                <div class="topic-text">Fill this form to book a session with Us!</div>
-                <form id='contactform' name="form-google-sheet" autocomplete="off">
+                <div class="topic-text">
+                    Fill this form to book a session with Us!
+                </div>
+                <form id="contactform" name="form-google-sheet" autocomplete="off">
                     <div class="input-box">
-                        <input type="text" id="name" name="Name" placeholder="Enter your name" required>
+                        <input type="text" id="name" name="Name" placeholder="Enter your name" required />
                     </div>
                     <div class="input-box">
-                        <input type="email" id="email" name="Email" placeholder="Enter your email" required>
+                        <input type="email" id="email" name="Email" placeholder="Enter your email" required />
                     </div>
-                    <div div class="input-box"> <input type="number" id="contact" name="Contact" placeholder="Please Enter your Contact Number" required></div>
-                    <div div class="input-box"> <input type="date" id="date" name="Date" placeholder="Please Enter your preferred date" required></div>
-                    <div div class="input-box"> <input type="time" id="time" name="Time" placeholder="Please Enter your preferred time" required></div>
-                    <div class="input-box message-box" name='status' id='status'>
-
+                    <div div class="input-box">
+                        <input type="number" id="contact" name="Contact" placeholder="Please Enter your Contact Number" required />
                     </div>
+                    <div div class="input-box">
+                        <input type="date" id="date" name="Date" placeholder="Please Enter your preferred date" required />
+                    </div>
+                    <div div class="input-box">
+                        <input type="time" id="time" name="Time" placeholder="Please Enter your preferred time" required />
+                    </div>
+                    <div class="input-box message-box" name="status" id="status"></div>
                     <div class="button">
-                        <input type="submit" name="submit" value="Send Now">
+                        <input type="submit" name="submit" value="Send Now" />
                     </div>
                 </form>
             </div>
@@ -38,23 +44,23 @@
     </div>
 
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbyfd7NnAcfQcOCYMCAtPrNnJ1Vr9zW-mQ2--5uAbon9pF3wdnYdYPXRRu7U8f7k-y2c/exec';
-        const form = document.forms['form-google-sheet']
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            var status = document.getElementById('status')
-            status.innerText = "Your details have been submitted successfully!"
+        const scriptURL =
+            "https://script.google.com/macros/s/AKfycbyfd7NnAcfQcOCYMCAtPrNnJ1Vr9zW-mQ2--5uAbon9pF3wdnYdYPXRRu7U8f7k-y2c/exec";
+        const form = document.forms["form-google-sheet"];
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            var status = document.getElementById("status");
+            status.innerText = "Your details have been submitted successfully!";
 
             fetch(scriptURL, {
-                method: 'POST',
-                body: new FormData(form)
-            }).then(response => console.log('Success!',
-                response)).catch(error => console.error('Error!', error.message))
-            document.getElementById('contactform').reset()
-        })
+                    method: "POST",
+                    body: new FormData(form),
+                })
+                .then((response) => console.log("Success!", response))
+                .catch((error) => console.error("Error!", error.message));
+            document.getElementById("contactform").reset();
+        });
     </script>
 </body>
-
-</html>
 
 </html>

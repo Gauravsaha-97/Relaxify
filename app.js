@@ -5,12 +5,10 @@ const instructions = document.querySelector(".instructions");
 const breadthText = document.querySelector(".breadth-text");
 let breadthLeft = 3;
 
-
 numberOfBreadth.addEventListener("change", () => {
     breadthLeft = numberOfBreadth.value;
     breadthText.innerText = breadthLeft;
 });
-
 
 const growCircle = () => {
     circleProgress.classList.add("circle-grow");
@@ -18,7 +16,6 @@ const growCircle = () => {
         circleProgress.classList.remove("circle-grow");
     }, 8000);
 };
-
 
 const breathTextUpdate = () => {
     breadthLeft = breadthLeft - 1;
@@ -31,7 +28,6 @@ const breathTextUpdate = () => {
         }, 4000);
     }, 4000);
 };
-
 
 const breathingApp = () => {
     const breathingAnimtaion = setInterval(() => {
@@ -48,7 +44,6 @@ const breathingApp = () => {
         breathTextUpdate();
     }, 12000);
 };
-
 
 start.addEventListener("click", () => {
     start.classList.add("button-inactive");
