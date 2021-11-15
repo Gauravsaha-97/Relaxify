@@ -1,8 +1,13 @@
 {
   "name": "relaxify",
   "version": "1.0.0",
+<<<<<<< HEAD
   "description": "",
   "main": "auth.js",
+=======
+  "description": "A breathing meditation app",
+  "main": "app.js",
+>>>>>>> 8a536a1ce98e5d19935123c6fa46e532223f8635
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,7 +15,11 @@
     "type": "git",
     "url": "git+https://github.com/Gauravsaha-97/relaxify.git"
   },
+<<<<<<< HEAD
   "author": "me",
+=======
+  "author": "",
+>>>>>>> 8a536a1ce98e5d19935123c6fa46e532223f8635
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Gauravsaha-97/relaxify/issues"
